@@ -3,3 +3,39 @@ body{
     padding: 0;
 }
 
+#logo::after, #logo::before{
+    content: "";
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: block;
+}
+
+#logo::before{
+    background: #f8d277;
+}
+
+#logo::after{
+    background: #f2ac04;
+    position: absolute;
+    left: 20px;
+    top:0;
+}
+
+#container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+#logo{
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+    width:100%;
+}
