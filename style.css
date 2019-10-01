@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
 body, ul{
     margin: 0;
     padding: 0;
@@ -104,4 +108,57 @@ header,#header-top{
 
 #header-menu ul li:first-child a{
     padding-left: 0;
+}
+
+#banners{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#banners > div {
+    width: 50%;
+}
+
+#banners > div img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+#banners .bn-left .wrap {
+    margin-right: 15px;
+    border: 1px solid gray;
+}
+
+#banners .bn-right .wrap {
+    margin-left: 15px;
+    position:relative;
+}
+
+#banners .bn-right .img-block{
+    position: relative;
+}
+
+#banners .bn-right h3{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size:2vw;
+    color: green;
+    font-weight: normal;
+}
+
+#banners i {
+    color: #f2ac84;
+    font-size: 26px;
+}
+
+#banners .bn-right p{
+    border-top: 1px solid #000;
+    margin-top: 5px;
+}
+
+#banners .slide{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
 }
