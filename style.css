@@ -5,6 +5,7 @@
 
 h1, h2, h3 {
     text-transform: uppercase;
+    font-weight: lighter;
 }
 
 body, ul{
@@ -135,6 +136,8 @@ header,#header-top{
 
 #banners .bn-right .img-block{
     position: relative;
+    height: 180px;
+    overflow: hidden;
 }
 
 #banners .bn-right h3{
@@ -161,4 +164,46 @@ header,#header-top{
     justify-content: space-around;
     align-items: center;
     margin-top: 15px;
+}
+
+#content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    border-top: 1px solid grey;
+    padding-top: 30px;
+}
+
+#content .item{
+    width:33.33%;
+}
+
+#content .item h2{
+    margin: 0 0 30px 0;
+}
+
+#content .about, #content .contacts{
+    padding: 0 40px;
+}
+
+#content .about{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.news{
+    padding-right: 5px;
+}
+
+.news .news-block{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 15px;
+    padding-bottom:10px;
+}
+
+.news .news-block h4{
+    margin: 0 0 5px 0;
 }
