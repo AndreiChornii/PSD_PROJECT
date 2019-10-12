@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
 body, ul{
     margin: 0;
     padding: 0;
@@ -104,4 +109,146 @@ header,#header-top{
 
 #header-menu ul li:first-child a{
     padding-left: 0;
+}
+
+#banners{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#banners > div {
+    width: 50%;
+}
+
+#banners > div img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+#banners .bn-left .wrap {
+    margin-right: 15px;
+    border: 1px solid gray;
+}
+
+#banners .bn-right .wrap {
+    margin-left: 15px;
+    position:relative;
+}
+
+#banners .bn-right .img-block{
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+#banners .bn-right h3{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size:2vw;
+    color: green;
+    font-weight: normal;
+}
+
+#banners i {
+    color: #f2ac84;
+    font-size: 26px;
+}
+
+#banners .bn-right p{
+    border-top: 1px solid #000;
+    margin-top: 5px;
+}
+
+#banners .slide{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    border-top: 1px solid grey;
+    padding-top: 30px;
+}
+
+#content .item{
+    width:33.33%;
+}
+
+#content .item h2{
+    margin: 0 0 30px 0;
+}
+
+#content .about, #content .contacts{
+    padding: 0 40px;
+}
+
+#content .about{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.news{
+    padding-right: 5px;
+}
+
+.news .news-block{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 15px;
+    padding-bottom:10px;
+}
+
+.news .news-block h4{
+    margin: 0 0 5px 0;
+}
+
+.news .date-news span{
+    color: #f2ac04;
+    font-weight: bold;
+    width: 100%;
+}
+
+.news .date-news{
+    border-right: 1px solid grey;
+    padding-right: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.about{
+    line-height: 20px;
+}
+
+.contacts > div{
+    border-bottom: 1px dashed grey;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts > div:last-child{
+    border-bottom: none;
+}
+
+.contacts i{
+    font-size: 26px;
+    margin-right: 25px;
+    width: 20%;
+    text-align: center;
+    color: lightgray;
+}
+
+.contacts span{
+    width: 80%;
+    color: gray;
+}
+
+.contacts > div:first-of-type span, .contacts > div:first-of-type + div span{
+    font-weight: bold;
 }
