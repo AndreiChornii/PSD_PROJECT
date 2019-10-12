@@ -207,3 +207,48 @@ header,#header-top{
 .news .news-block h4{
     margin: 0 0 5px 0;
 }
+
+.news .date-news span{
+    color: #f2ac04;
+    font-weight: bold;
+    width: 100%;
+}
+
+.news .date-news{
+    border-right: 1px solid grey;
+    padding-right: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.about{
+    line-height: 20px;
+}
+
+.contacts > div{
+    border-bottom: 1px dashed grey;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts > div:last-child{
+    border-bottom: none;
+}
+
+.contacts i{
+    font-size: 26px;
+    margin-right: 25px;
+    width: 20%;
+    text-align: center;
+    color: lightgray;
+}
+
+.contacts span{
+    width: 80%;
+    color: gray;
+}
+
+.contacts > div:first-of-type span, .contacts > div:first-of-type + div span{
+    font-weight: bold;
+}
